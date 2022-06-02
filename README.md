@@ -1,6 +1,6 @@
 
   ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-  # Friendless in Seattle
+  # Dungeons and Dragons Character Creator
   ## Table of Contents
   * [Description](#description)
   * [User Story](#user-story)
