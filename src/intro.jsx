@@ -29,7 +29,8 @@ export const intro = () => {
                 display:'flex',
                 margin:'30px',
                 marginBottom:'20rem',
-                  fontFamily:'Cursive'
+                  fontFamily:'Cursive',
+                  fontSize:'3rem'
     }}>Dungeon Disco</h1>
      <h2 style={{
                 fontFamily:'fantasy',
