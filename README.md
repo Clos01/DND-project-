@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+  # Dungeons and Dragons Character Creator
+  ## Table of Contents
+  * [Description](#description)
+  * [User Story](#user-story)
+  * [Languages](#languages)
+  * [Link to URL](#live-url-link)
+  * [Photos](#photos)
+  * [Contributors](#contributors-and-their-github-links)
+  * [Requirements](#requirements)
+  * [Questions](#questions)
+  * [License](#license)
+  
 
-## Available Scripts
+  ## Description
+  Pandemic life has meant a lot of changes for many, including moving to a new town or city.
+  Between lockdowns, working remotely, and masks, how do you organically make new friends in your new environment? 
+  Well, you don’t. You’re Friendless in Seattle. 
+  Our app helps you connect locally or remotely with people that share your interests so that you can make a new friend… or seven! 
 
-In the project directory, you can run:
+  Friendless in Seattle helps you meet new friends locally or around the world that share your interests.
+  
+  ## User Story
+  ``` md
+  If I register and fill out my ‘profile’ and choose to meet virtual or local friends and choose an interest category, 
+  then when others are selecting the same criteria it will populate my friends page. 
+  If I select “message” on a friend in my friends page, 
+  then I am taken to a page that contains messages between myself and just that friend. 
+  When I view the messages page, I am presented with messages that I have open.
+  ```
+  
+  
+  ## Languages
+   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+   <br>
+    ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+   <br>
+    ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+   <br>
+    ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+   <br>
 
-### `npm start`
+  ## Live URL Link
+  https://friendless-in-seattle.herokuapp.com/
+  
+  ## Photos
+  **_Image of Login_**:
+  <br>
+  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Login.png">
+  <br>
+  _**Image of Friends Page**_:
+  <br>
+  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Friends.png">
+  <br>
+  _**Image of Profile Page**_:
+  <br>
+  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Profile.png">
+  <br>
+  _**Image of Messages Page**_:
+  <br>
+  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Messages.png">
+  
+  
+  ## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Add `.env` file with the following content:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+SEQUELIZE_USER=your_mysql_db_user
+SEQUELIZE_PASSWORD=your_mysql_db_password
+SEQUELIZE_HOST=your_mysql_db_host
+AUTH_SECRET=your_auth_secret_key
+ADMIN_USER_PWD=admin_password
+USER_PWD=user_pwd
+FORCE_SYNC=true_or_false
+TU=mysql_user
+TP=mysql_password
+```
+  ## Contributors and Their Github Links
+  ||
+[Carlos's Github](https://github.com/Clos01) ||
+[Eric's Github](https://github.com/iwmwargin) ||
+[Leigh's Github](https://github.com/leigh-pfeiffer) ||
+[Lyndsey's Github](https://github.com/lyndsclev) ||
+[Sam's Github](https://github.com/Sam-Clark1) ||
+  ## Questions? 
+  Carlos's Email - Cjrivas00@gmail.com
+  <br>
+  Eric's Email - iwmwargin@gmail.com
+  <br>
+  Leigh's Email - leigh.pfeiffer@gmail.com
+  <br>
+  Lyndsey's Email - Lyndsclev@gmail.com
+  <br>
+  Sam's Email - samclark2399@gmail.com
+  <br>
 
-### `npm test`
+  ## License
+  This project is licensed under the MIT. Please see https://opensource.org/licenses/MIT for more details.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
