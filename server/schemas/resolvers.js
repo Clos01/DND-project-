@@ -82,7 +82,20 @@ const resolvers = {
           }
         
           throw new AuthenticationError('You need to be logged in!'); 
-        }
+        },
+
+        //remove character
+        removeCharacter: async (parent, { characterByID }, context) => {
+          if (context.user) {
+            const updatedUser = await User.findByIdAndUpdate(
+              { _id: context.user._id },
+              { $pull: { characters: { characterByID }}},
+              { new: true }
+            );
+            return updatedUser;
+          }
+          throw new AuthenticationError('You need to be logged in!');
+        },
     }
 }
 
