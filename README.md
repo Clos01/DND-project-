@@ -23,7 +23,11 @@
   
   ## User Story
   ``` md
-  If I register and fill out my ‘profile’ I am taken to my profile page that allows me to create a new character.  Upon entering my information I am       given a random avatar that is generated from my username.  When I land on my profile page I can select from 4 character options: Gender, Race, Class     and Background. This character will be saved to my profile page and I can create as many characters as I'd like. My characters will also be assigned     an avatar based on it's name.
+  If I register and fill out my ‘profile’ I am taken to my profile page that allows me to create a new character.  
+  Upon entering my information I am  given a random avatar that is generated from my username.  
+  When I land on my profile page I can select from 4 character options: Gender, Race, Class 
+  and Background. This character will be saved to my profile page and I can create as many characters as I'd like. 
+  My characters will also be assigned an avatar based on it's name.
   ```
   
   
