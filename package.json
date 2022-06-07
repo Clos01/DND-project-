@@ -23,5 +23,8 @@
   "homepage": "https://github.com/Clos01/DND-project-#readme",
   "devDependencies": {
     "concurrently": "^7.2.1"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
   }
 }
