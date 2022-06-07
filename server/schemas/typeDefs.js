@@ -23,8 +23,8 @@ type Query {
     me: User
     users: [User]
     user(username: String!): User
-    characters(username: String): [Character]
-    character(_id: ID!): Character
+    userCharacters(username: String): [Character]
+    characterByID(_id: ID!): Character
     allCharacters: [Character]
 }
 

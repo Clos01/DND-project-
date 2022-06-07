@@ -28,14 +28,18 @@ const resolvers = {
             .select('-__v -password')
             .populate('characters')
         },
-        characters: async () => {
-
+        // get all characters for a user
+        userCharacters: async (parent, { username }) => {
+          const params = username ? { username } : {};
+          return Character.find(params).sort({ createdAt: -1 });
         },
-        character: async () => {
-
+        // get character by id
+        characterByID: async (parent, { _id }) => {
+          return Character.findOne({ _id });
         },
+        // get all characters
         allCharacters: async () => {
-
+          return Character.find()
         }
     },
     Mutation: {
