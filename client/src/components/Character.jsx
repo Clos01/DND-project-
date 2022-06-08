@@ -1,4 +1,5 @@
 import React from 'react'
+import '../components/CreateChar'
 
 class Character extends Component {
   state = {
@@ -17,6 +18,8 @@ class Character extends Component {
           Bard: 'https://piskel-imgstore-b.appspot.com/img/5f73c0e6-f798-11e9-8bcb-7b541452a7e8.gif',
       }      
   }
+
+  // this is leighs idea is style plz change
   render() {
       return (
           <div className="col l6" style={{height: "80vh", overflow: "auto"}}>
