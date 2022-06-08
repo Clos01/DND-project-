@@ -23,43 +23,38 @@ export const intro = () => {
    >
       </ParallaxLayer>
 
-
       <ParallaxLayer> 
      <h1 style={{color:'	#deb887',
                 display:'flex',
                 margin:'30px',
                 marginBottom:'20rem',
-                  fontFamily:'Cursive',
-                  fontSize:'3rem'
+                  
+                  fontSize:'3rem',
+              fontFamily:'MedievalSharp, cursive',
     }}>Dungeon Disco</h1>
-     <h2 style={{
-                fontFamily:'fantasy',
-                fontSize:'2.5rem',
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                margin:'20px',
-                marginBottom:'10rem',
-                color:'	#dc143c',
-     }}>Enter at your own risk! </h2>
+  <p>
+beware Danger up ahead
+  <span className='span'
+  style={{
+   fontFamily:'MedievalSharp, cursive',
+  }} >
+   Enter if you dare
+  </span>
+  &mdash; some have lost and not return &mdash;
+</p>
      
      <div style={{
         display:'flex',
         alignItems: "center",
-justifyContent:'flex-end'
+justifyContent:'center'
      }}> 
 
 <Link to='/login'>
 
-<button  style={{marginRight:'8rem',
-background: 'transparent',
-padding:'20px 45px',
-color:'white',
-outlineStyle:'double',
-outlineColor:'brown',
-fontSize:'1.2rem',
-fontFamily:'fantasy'
-}}>
+<button className='intro_btn' style={{
+              fontFamily:'MedievalSharp, cursive',
+
+}} >
    Enter
 </button>
 </Link>
