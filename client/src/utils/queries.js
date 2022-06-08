@@ -1,15 +1,5 @@
 import { gql } from "@apollo/client";
 
-export const QUERY_ALL_CHAR = gql`
-  query getAllCharacters {
-    getAllCharacters {
-      image
-      name
-      image
-    }
-  }
-`;
-
 export const QUERY_ME = gql`
   query me {
     me {
@@ -19,35 +9,92 @@ export const QUERY_ME = gql`
       characters {
         _id
         name
-        race
-        image
-        class
-        background
         gender
+        race
+        charClass
+        background
+        username
       }
     }
   }
 `;
+
+export const QUERY_USERS = gql`
+query users {
+  users {
+    _id
+    username
+    email
+    characters {
+      _id
+        name
+        gender
+        race
+        charClass
+        background
+        username
+    }
+  }
+}
+`;
+
+export const QUERY_USER = gql`
+query user($username: String!) {
+  users(username: $username) {
+    _id
+    username
+    email
+    characters {
+      _id
+        name
+        gender
+        race
+        charClass
+        background
+        username
+    }
+  }
+}
+`;
+
 export const QUERY_USER_CHAR = gql`
-  query userCharacters {
-    userCharacters {
-      name
-      race
-      image
-      class
-      background
+  query userCharacters($username: String) {
+    userCharacters(username: $username) {
+        _id
+        name
+        gender
+        race
+        charClass
+        background
+        username
     }
   }
 `;
 
-export const QUERY_CHAR = gql`
-  query character($characterId: ID) {
-    character(characterId: $characterId) {
-      name
-      race
-      class
-      weapons
-      image
+export const QUERY_CHAR_ID = gql`
+  query characterByID($characterId: ID) {
+    characterByID(characterId: $characterId) {
+        _id
+        name
+        gender
+        race
+        charClass
+        background
+        username
+    }
+  }
+`;
+
+export const QUERY_ALL_CHAR = gql`
+  query allCharacters {
+    allCharacters {
+        _id
+        name
+        gender
+        race
+        charClass
+        background
+        username
     }
   }
 `;

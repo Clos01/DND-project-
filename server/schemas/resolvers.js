@@ -85,14 +85,17 @@ const resolvers = {
         },
 
         //remove character
-        removeCharacter: async (parent, { characterByID }, context) => {
+        removeCharacter: async (parent, { _id }, context) => {
           if (context.user) {
-            const updatedUser = await User.findByIdAndUpdate(
+            const deleteCharacter = await Character.findByIdAndDelete({_id})
+            
+            await User.findByIdAndUpdate(
               { _id: context.user._id },
-              { $pull: { characters: { characterByID }}},
+              { $pull: { characters: { _id }}},
               { new: true }
             );
-            return updatedUser;
+            
+            return deleteCharacter;
           }
           throw new AuthenticationError('You need to be logged in!');
         },
