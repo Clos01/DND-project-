@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 import dungeon from './images/dungeon.gif' 
 import { Button, ButtonGroup, color } from '@chakra-ui/react'
@@ -42,12 +42,16 @@ export const intro = () => {
                 marginBottom:'10rem',
                 color:'	#dc143c',
      }}>Enter at your own risk! </h2>
+     
      <div style={{
         display:'flex',
         alignItems: "center",
 justifyContent:'flex-end'
      }}> 
-<button style={{marginRight:'8rem',
+
+<Link to='/login'>
+
+<button  style={{marginRight:'8rem',
 background: 'transparent',
 padding:'20px 45px',
 color:'white',
@@ -58,6 +62,7 @@ fontFamily:'fantasy'
 }}>
    Enter
 </button>
+</Link>
    </div>
    </ParallaxLayer>   
 
