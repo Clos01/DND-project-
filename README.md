@@ -14,12 +14,7 @@
   
 
   ## Description
-  Pandemic life has meant a lot of changes for many, including moving to a new town or city.
-  Between lockdowns, working remotely, and masks, how do you organically make new friends in your new environment? 
-  Well, you don’t. You’re Friendless in Seattle. 
-  Our app helps you connect locally or remotely with people that share your interests so that you can make a new friend… or seven! 
-
-  Friendless in Seattle helps you meet new friends locally or around the world that share your interests.
+  Love Dungeons and Dragons but hate keeping track of your stats on paper??  Enter "Insert App Name Here".  With "Insert App Name Here" you can create     an account that will allow you to create as many D&D characters as you'd like.  At your profile page you can create a character by entering their name   and stats. From there you will have a digital representation of your D&D character that you can update, delete and eventually share with your campaign   friends.  When you choose your race you are automatically assigned a nifty avatar that matches said race. You will also be assigned an avatar for your   username upon creation.  
   
   ## User Story
   ``` md
