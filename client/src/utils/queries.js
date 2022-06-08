@@ -11,7 +11,7 @@ export const QUERY_ME = gql`
         name
         gender
         race
-        class
+        charClass
         background
         username
       }
@@ -30,7 +30,7 @@ query users {
         name
         gender
         race
-        class
+        charClass
         background
         username
     }
@@ -49,7 +49,7 @@ query user($username: String!) {
         name
         gender
         race
-        class
+        charClass
         background
         username
     }
@@ -64,7 +64,7 @@ export const QUERY_USER_CHAR = gql`
         name
         gender
         race
-        class
+        charClass
         background
         username
     }
@@ -78,7 +78,7 @@ export const QUERY_CHAR_ID = gql`
         name
         gender
         race
-        class
+        charClass
         background
         username
     }
@@ -92,7 +92,7 @@ export const QUERY_ALL_CHAR = gql`
         name
         gender
         race
-        class
+        charClass
         background
         username
     }

@@ -25,13 +25,13 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_CHAR = gql`
-  mutation addCharacter($name: String!, $gender: String!, $race: String!, $class: String!, $background: String!) {
-    addCharacter(name: $name, gender: $gender, race: $race, class: $class, background: $background) {
+  mutation addCharacter($name: String!, $gender: String!, $race: String!, $charClass: String!, $background: String!) {
+    addCharacter(name: $name, gender: $gender, race: $race, charClass: $charClass, background: $background) {
       _id
       name
       gender
       race
-      class
+      charClass
       background
       username
     }

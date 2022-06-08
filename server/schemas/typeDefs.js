@@ -7,7 +7,7 @@ type Character {
   name: String
   gender: String
   race: String
-  class: String
+  charClass: String
   background: String
   username: String
 }
@@ -31,7 +31,7 @@ type Query {
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addCharacter(name: String!, gender: String!, race: String!, class: String!, background: String!): Character
+    addCharacter(name: String!, gender: String!, race: String!, charClass: String!, background: String!): Character
     removeCharacter(_id: ID!): User
 }
 
