@@ -4,7 +4,7 @@ import {Parallax, ParallaxLayer} from '@react-spring/parallax';
 import dungeon from './images/dungeon.gif' 
 import { Button, ButtonGroup, color } from '@chakra-ui/react'
 
-export const intro = () => {
+export const intro = ({currentPage, setCurrentPage}) => {
   return (
     <Parallax pages={1} style={{ top: "0", left: "0" }}>
         
@@ -55,6 +55,8 @@ outlineStyle:'double',
 outlineColor:'brown',
 fontSize:'1.2rem',
 fontFamily:'fantasy'
+}} onClick={() => {
+   setCurrentPage('website')
 }}>
    Enter
 </button>

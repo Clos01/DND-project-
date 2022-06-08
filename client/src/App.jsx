@@ -33,16 +33,23 @@ const client = new ApolloClient({
 });
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState('intro')
   return (
-    <ApolloProvider client={client}>
+  <ApolloProvider client={client}>
     <Router>
-      <div className="flex-column justify-flex-start min-100-vh">
-        <Navbar />
+      {currentPage === 'intro' ? (
+      <><Intro 
+        currentPage = {currentPage}
+        setCurrentPage = {setCurrentPage}
+      ></Intro></>) : 
+      (<>
+        <div className="flex-column justify-flex-start min-100-vh">
+          <Navbar />
         <div className="container">
           <Routes>
             <Route
               path="/"
-              element={<Intro />}
+              element={<Login />}
             />
             <Route
               path="/login"
@@ -57,7 +64,7 @@ const App = () => {
               element={<MyCharacters />}
             />
             <Route
-              path="/profile/"
+              path="/createCharacter/"
               element={<CharacterChar />}
             />
             {/* <Route
@@ -67,6 +74,8 @@ const App = () => {
           </Routes>
         </div>
       </div>
+      </>
+      )}
     </Router>
   </ApolloProvider>
   ); 
