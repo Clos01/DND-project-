@@ -17,7 +17,7 @@ const characterSchema = new Schema(
             required: true,
             trim: true
         },
-        class: {
+        charClass: {
             type: String,
             required: true,
             trim: true
