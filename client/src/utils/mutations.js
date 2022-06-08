@@ -25,23 +25,15 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_CHAR = gql`
-  mutation addChar($characterInput: characterInput) {
-    addCharacter(characterInput: $characterInput) {
-      email
+  mutation addCharacter($name: String!, $gender: String!, $race: String!, $class: String!, $background: String!) {
+    addCharacter(name: $name, gender: $gender, race: $race, class: $class, background: $background) {
+      _id
+      name
+      gender
+      race
+      class
+      background
       username
-      password
-      characters {
-        name
-        race
-        image
-        class
-        background
-        gender
-        user {
-          username
-        }
-        items
-      }
     }
   }
 `;
@@ -58,10 +50,9 @@ export const UPDATE_CHAR = gql`
 `;
 
 export const DELETE_CHAR = gql`
-  mutation deleteChar($characterId: ID) {
-    deleteCharacter(characterId: $characterId) {
+  mutation removeCharacter($characterId: ID) {
+    removeCharacter(characterId: $characterId) {
       username
-      
     }
   }
 `;
