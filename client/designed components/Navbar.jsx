@@ -1,6 +1,4 @@
-import React from 'react'
-
-import disco from '../images/disco-dice.png'; 
+import disco from '../assets/disco-dice.png'; 
 
 const Navbar = () => {
     return(
@@ -38,3 +36,5 @@ const Navbar = () => {
 }; 
 
 export default Navbar; 
+  
+

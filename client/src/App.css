@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans:wght@400;700&family=Staatliches&display=swap');
+
+body {
+    background-color: black; 
+    height: 100vh;
+}
+
+#nav-title {
+    color: #e7e7db; 
+    font-size: 60px;
+    font-family:'MedievalSharp', cursive;
+}
+
+#nav-sub {
+    color: #e7e7db; 
+    font-size: 20px; 
+    font-weight: bold;  
+}
+
+#acct-btn {
+    background-color: #e7e7db; 
+    border: 0px; 
+}
+
+#login-btn {
+    background-color: #cc0000ff;
+    color: white;
+    border: 0px; 
+}
+
+#create-acct-btn {
+    background-color: #336871ff;
+    color: white; 
+    border: 0px; 
+}
+
+#heading-txt {
+    color: #e7e7db; 
+}
+
+#char-box {
+    background-color: #e7e7db; 
+}
