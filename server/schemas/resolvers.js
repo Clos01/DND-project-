@@ -85,11 +85,11 @@ const resolvers = {
         },
 
         //remove character
-        removeCharacter: async (parent, { characterByID }, context) => {
+        removeCharacter: async (parent, { _id }, context) => {
           if (context.user) {
             const updatedUser = await User.findByIdAndUpdate(
               { _id: context.user._id },
-              { $pull: { characters: { characterByID }}},
+              { $pull: { characters: { _id }}},
               { new: true }
             );
             return updatedUser;
