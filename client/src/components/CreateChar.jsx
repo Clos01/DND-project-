@@ -3,7 +3,7 @@ import React from "react";
 
 const App = () => {
     const [gender, setGender] = React.useState('Non-Binary');
-    const [charlass, setCharlass] = React.useState('Wizard');
+    const [charlass, setCharclass] = React.useState('Wizard');
     const [charrace, setCharace] = React.useState('Human');
     const [background, setBackground] = React.useState('Noble');
   
@@ -12,7 +12,7 @@ const App = () => {
     };
   
     const handleCharclassChange = (event) => {
-      setCharlass(event.target.value);
+      setCharclass(event.target.value);
     };
 
     const handlecharraceChange = (event) => {
@@ -70,7 +70,7 @@ const App = () => {
                 { label : "Monk", value: 'monk'},
             ]}
             value={charrace}
-            onChange={handleCharraceChange}
+            onChange={handlecharraceChange}
           />
 
           <Dropdown
