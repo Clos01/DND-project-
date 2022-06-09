@@ -72,8 +72,9 @@ const Login = () => {
                                     <button id="login-btn" className="button is-medium is-fullwidth" type='submit'>Login</button>
                                 </div>
                             </div>
-                            <hr />
-                            <div className="field">
+                            
+                        </form>
+                        <div className="field">
                                 <div className="control">
                                     <button id="create-acct-btn" className="button is-medium is-fullwidth">
                                         <Link className='has-text-white' to="/signup">
@@ -81,8 +82,7 @@ const Login = () => {
                                         </Link>
                                     </button>
                                 </div>
-                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </section>
