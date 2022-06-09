@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: auto;
+   
+}
+.Bone{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+.parallax2{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* h4{
+    width: max-content;
+    margin: 0 auto;
+ 
+    display: flex;
+
+    margin-top: 150px;
+   height: 100px;
+    width: 150%;
+
+} */
+.body {
+    height: 100%;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 0%;
+    color: #666;
+    text-align: center;
+    display: flex;
+    
+}
+.parallax1 {
+     background-image: url("./images/sky.gif"); 
+    background-size: cover;
+
+}
+.parallax2 {
+    background-image: url('./images/sunset.jpg');
+ background-size: cover;
+}
+.parallax3 {
+    /* background-image: url(img/Power.png);
+    min-height: 40%; */
+}
+.parallax4 {
+    /* background-image: url(img/Birdy.jpg);
+    min-height: 100%; */
+}
+h1{
+    margin-top: 20px;
+}
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    /* Important */
+}
+.section3{
+    position: relative;
+    margin-top: 105rem;
+}
+.head {
+    position: relative;
+    display: flex;
+      flex-wrap: wrap;
+     margin-left: auto;
+    margin-right: auto; 
+    left: 0;
+    right: 0;
+    justify-content: center;    
+    color: rgb(148, 58, 58);
+    font-size:50px;
+    top:50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
+}
+
+.head:hover{
+    color:transparent;
+}
+
+h4{
+    margin-top: 115px;
+}
+.section2 {
+
+position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.footer{
+
+position: sticky;
+margin-top: 123rem;
+    width: 100%;
+    background-color: #323232;
+    color: #f2f2f2;
+    height: 8vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+}
+
+ @media (max-width:auto) {
+    .head{
+        font-size: 50px;
+    }
+    
+ } 
+ .Enter_btn{
+margin-top: 150px;
+ }
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
