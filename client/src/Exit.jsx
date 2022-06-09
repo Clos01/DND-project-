@@ -31,11 +31,10 @@ const Exit = () => {
    speed={1}
    factor={.10} 
    className='section2'>
-    <h1> Learning about the game </h1>
-    
-  
+    <h1> Learning about the game </h1> 
+    <div> 
     <h4> Thank you for using Disco at the Dungeon </h4>
-    
+    </div>
   </ParallaxLayer>
  
  <ParallaxLayer
