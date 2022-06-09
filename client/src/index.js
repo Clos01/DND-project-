@@ -1,14 +1,10 @@
-
-   
-
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
+import 'bulma/css/bulma.min.css';
 import App from './App';
-import { ChakraProvider } from '@chakra-ui/react';
 
 ReactDOM.render(
   <React.StrictMode>
-
 
       <App />
   

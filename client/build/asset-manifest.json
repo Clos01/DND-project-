@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e2b820a.css",
+    "main.js": "/static/js/main.064597aa.js",
+    "static/media/dungeon.gif": "/static/media/dungeon.c41cc5702dc4212832c0.gif",
+    "static/media/sky.gif": "/static/media/sky.89549c4fdcc631e6a0ae.gif",
+    "static/media/Druid.gif": "/static/media/Druid.0fb342e818400585e4aa.gif",
+    "static/media/Rogue.gif": "/static/media/Rogue.7585bcc9cd4f97b9cd6b.gif",
+    "static/media/Ranger.gif": "/static/media/Ranger.0681533515d2cb70470d.gif",
+    "static/media/Wizard.gif": "/static/media/Wizard.ea97398a70d070adc2aa.gif",
+    "static/media/Warlock.gif": "/static/media/Warlock.797ed94f1d9356397030.gif",
+    "static/media/Sorcerer.gif": "/static/media/Sorcerer.4530a2502e23a20de2be.gif",
+    "static/media/Barbarian.gif": "/static/media/Barbarian.a77353c16c0ea4ab8d01.gif",
+    "static/media/Paladin.gif": "/static/media/Paladin.4ec2a9654dd2d53b6c51.gif",
+    "static/media/Cleric.gif": "/static/media/Cleric.abdf0f34642ce7c5cf16.gif",
+    "static/media/Bard.gif": "/static/media/Bard.ab32c0e41a2ccb18f868.gif",
+    "static/media/Warrior.gif": "/static/media/Warrior.7e6a6f67aa4598f00fb2.gif",
+    "static/media/disco-dice.png": "/static/media/disco-dice.1a59e43078e7b03a2d66.png",
+    "static/media/Monk.gif": "/static/media/Monk.42226baa69be4e5eb5cc.gif",
+    "index.html": "/index.html",
+    "main.2e2b820a.css.map": "/static/css/main.2e2b820a.css.map",
+    "main.064597aa.js.map": "/static/js/main.064597aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e2b820a.css",
+    "static/js/main.064597aa.js"
+  ]
+}
