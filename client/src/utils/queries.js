@@ -25,10 +25,10 @@ me {
 username
   }
 }
-`
+`;
 
 export const QUERY_USERS = gql`
-query users {
+{
   users {
     _id
     username
@@ -80,8 +80,8 @@ export const QUERY_USER_CHAR = gql`
 `;
 
 export const QUERY_CHAR_ID = gql`
-  query characterByID($characterId: ID) {
-    characterByID(characterId: $characterId) {
+  query characterByID($id: ID!) {
+    characterByID(_id: $id) {
         _id
         name
         gender

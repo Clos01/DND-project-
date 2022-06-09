@@ -24,7 +24,7 @@ const Navbar = () => {
                 <span className="image is-48x48 mr-2">
                     <img src={disco} alt="" />
                 </span>
-               {data.me.username}
+               <Link to={'/'} className='has-text-white'>{data.me.username}</Link>
             </p>
             ):(<div className='level-item mr-6' ></div>)}
             

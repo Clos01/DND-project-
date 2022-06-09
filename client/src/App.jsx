@@ -7,6 +7,7 @@ import MyCharacters from "./pages/MyCharacters";
 import SignUpPage from "./pages/SignUp";
 
 import Navbar from "./components/Navbar";
+import Character from "./components/Character";
 
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -41,7 +42,7 @@ const App = () => {
           <Routes>
             <Route
               path="/"
-              element={<Login />}
+              element={<MyCharacters />}
             />
             <Route
               path="/login"
@@ -52,12 +53,16 @@ const App = () => {
               element={<SignUpPage />}
             />
             <Route
-              path="/profile/"
+              path="/profile"
               element={<MyCharacters />}
             />
             <Route
-              path="/createCharacter/"
+              path="/createCharacter"
               element={<CharacterChar />}
+            />
+            <Route
+              path="/character/:id"
+              element={<Character />}
             />
             {/* <Route
               path="*"

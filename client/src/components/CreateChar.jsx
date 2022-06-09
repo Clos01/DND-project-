@@ -1,12 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
+import { useMutation } from '@apollo/client';
+import { ADD_CHAR } from '../utils/mutations';
+import { QUERY_ME, QUERY_USER_CHAR } from "../utils/queries";
 
-
-const App = () => {
-    const [gender, setGender] = React.useState('Non-Binary');
-    const [charlass, setCharclass] = React.useState('Wizard');
-    const [charrace, setCharace] = React.useState('Human');
-    const [background, setBackground] = React.useState('Noble');
+export default function Create ()  {
+    const [gender, setGender] = useState('Non-Binary');
+    const [charlass, setCharclass] = useState('Wizard');
+    const [charrace, setCharace] = useState('Human');
+    const [background, setBackground] = useState('Noble');
   
+    const [addCharacter, { error }] = useMutation(ADD_CHAR, {
+        update(cache, { data: { addCharacter } }) {
+      
+            // could potentially not exist yet, so wrap in a try/catch
+          try {
+            // update me array's cache
+            const { me } = cache.readQuery({ query: QUERY_ME });
+            cache.writeQuery({
+              query: QUERY_ME,
+              data: { me: { ...me, characters: [...me.characters, addCharacter] } },
+            });
+          } catch (e) {
+            console.warn("First character insertion by user!")
+          }
+      
+          // update thought array's cache
+          const { characters } = cache.readQuery({ query: QUERY_ME });
+          cache.writeQuery({
+            query: QUERY_USER_CHAR,
+            data: { thoughts: [addCharacter, ...characters] },
+          });
+        }
+      });
+
     const handleGenderChange = (event) => {
       setGender(event.target.value);
     };
@@ -23,9 +49,8 @@ const App = () => {
       setBackground(event.target.value);
     };
 
-
     return (
-        <div>
+        <form>
           <Dropdown
             label="Choose a Gender"
             options={[
@@ -90,11 +115,6 @@ const App = () => {
           <p>Class: {charlass}!</p>
           <p>Race: {charrace}!</p>
           <p>background {background}!</p>
-        </div>
+        </form>
       );
     };
-
-
-
-
-export default Create;
