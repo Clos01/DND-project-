@@ -25,6 +25,7 @@
     "concurrently": "^7.2.1"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "bulma": "^0.9.4"
   }
 }

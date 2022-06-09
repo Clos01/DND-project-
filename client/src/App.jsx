@@ -3,7 +3,7 @@ import './App.css';
 import Intro from "./intro";
 
 import Login from "./pages/LogIn";
-import CharacterChar from "./pages/CharacterChar";
+import CharacterChar from "./pages/CreateChar";
 import MyCharacters from "./pages/MyCharacters";
 import SignUp from "./pages/SignUp";
 

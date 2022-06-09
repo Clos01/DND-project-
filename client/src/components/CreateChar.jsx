@@ -1,7 +1,8 @@
+import React, { Component } from "react";
+import API from "../utils/API"
+import "../components/Character"
 
-import API from "../../../routes/dndRoutes"
-
-class Builder extends Component {
+class Create extends Component {
     state = {
       Name: "",
       Race: "",
@@ -13,9 +14,7 @@ class Builder extends Component {
       Races: [],
     };
   
-    static contextType = UserSession;
-  
-    submit(event) {
+     submit(event) {
       event.preventDefault();
       if (this.state.Name.length === 0) {
         console.log("Character needs a name!");
@@ -43,3 +42,8 @@ class Builder extends Component {
     }
 }
        
+
+
+
+
+export default Create;
