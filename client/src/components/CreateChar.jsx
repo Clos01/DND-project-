@@ -34,7 +34,7 @@ const App = () => {
               { label: 'Non-Binary', value: 'meat' },
             ]}
             value={gender}
-            onChange={handleFoodChange}
+            onChange={handleGenderChange}
           />
     
           <Dropdown
@@ -54,7 +54,7 @@ const App = () => {
                 { label : "Bard", value: 'bard'},
             ]}
             value={charclass}
-            onChange={handleDrinkChange}
+            onChange={handleCharclassChange}
           />
 
           <Dropdown
@@ -70,7 +70,7 @@ const App = () => {
                 { label : "Monk", value: 'monk'},
             ]}
             value={charrace}
-            onChange={handleDrinkChange}
+            onChange={handleCharraceChange}
           />
 
           <Dropdown
@@ -83,7 +83,7 @@ const App = () => {
                 { label : "Hermit", value: "hermit"},
             ]}
             value={background}
-            onChange={handleDrinkChange}
+            onChange={handleBackgroundChange}
           />
     
           <p>Gender: {gender}!</p>
