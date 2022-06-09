@@ -77,7 +77,7 @@ const Login = () => {
                         <div className="field">
                                 <div className="control">
                                     <button id="create-acct-btn" className="button is-medium is-fullwidth">
-                                        <Link to="/signup">
+                                        <Link className='has-text-white' to="/signup">
                                         Create new account
                                         </Link>
                                     </button>

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import './App.css'; 
-import Intro from "./intro";
 
 import Login from "./pages/LogIn";
 import CharacterChar from "./pages/CharacterChar";
@@ -33,16 +32,9 @@ const client = new ApolloClient({
 });
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('intro')
   return (
   <ApolloProvider client={client}>
     <Router>
-      {currentPage === 'intro' ? (
-      <><Intro 
-        currentPage = {currentPage}
-        setCurrentPage = {setCurrentPage}
-      ></Intro></>) : 
-      (<>
         <div className="flex-column justify-flex-start min-100-vh">
           <Navbar />
         <div className="container">
@@ -74,8 +66,6 @@ const App = () => {
           </Routes>
         </div>
       </div>
-      </>
-      )}
     </Router>
   </ApolloProvider>
   ); 

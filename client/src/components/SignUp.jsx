@@ -45,9 +45,6 @@ const SignUp = () => {
     return (
         <div>
             <section className="section">
-                <Title />
-            </section>
-            <section className="section">
                 <div className="columns is-centered">
                     <div className="column is-4">
                         <figure className="image is-1x1">
@@ -95,6 +92,7 @@ const SignUp = () => {
                                 <div className="control">
                                     <button id="create-acct-btn" className="button">Create new account</button>
                                 </div>
+                                {error && <div>Sign up failed</div>}
                             </div>
                         </form>
                     </div>
