@@ -41,19 +41,16 @@
   ## Photos
   **_Image of Login_**:
   <br>
-  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Login.png">
+  <img src="https://github.com/Clos01/DND-project-/blob/main/assets/images/Login.png">
   <br>
-  _**Image of Friends Page**_:
+  _**Image of Create Account**_:
   <br>
-  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Friends.png">
+  <img src="https://github.com/Clos01/DND-project-/blob/main/assets/images/Create.png">
   <br>
   _**Image of Profile Page**_:
   <br>
-  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Profile.png">
+  <img src="https://github.com/Clos01/DND-project-/blob/main/assets/images/Profile.png">
   <br>
-  _**Image of Messages Page**_:
-  <br>
-  <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Messages.png">
   
   
   ## Contributors and Their Github Links
