@@ -73,8 +73,7 @@ const Login = () => {
                                 </div>
                             </div>
                             <hr />
-                        </form>
-                        <div className="field">
+                            <div className="field">
                                 <div className="control">
                                     <button id="create-acct-btn" className="button is-medium is-fullwidth">
                                         <Link className='has-text-white' to="/signup">
@@ -83,6 +82,8 @@ const Login = () => {
                                     </button>
                                 </div>
                         </div>
+                        </form>
+                        
                     </div>
                 </div>
             </section>
