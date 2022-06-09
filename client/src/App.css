@@ -29,7 +29,7 @@ html,body
 }
 
 #login-btn {
-    background-color: #cc0000ff;
+    background-color: rgb(185, 29, 29);
     color: white;
     border: 0px; 
 }
@@ -50,5 +50,12 @@ html,body
 
 #char-box {
     background-color: #e7e7db; 
+}
+
+#new-char-btn {
+    background-color: rgb(185, 29, 29);
+    font-weight: bold; 
+    border: none; 
+    color: white; 
 }
 

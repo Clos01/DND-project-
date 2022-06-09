@@ -169,7 +169,7 @@ export default function CreateCharComp ()  {
 
                 <div className="field">
                     <div className="control">
-                      <button id="login-btn" type="submit" className="button mt-4">Create character</button>
+                      <button id="new-char-btn" type="submit" className="button mt-4">Create character</button>
                     </div>
                 </div>
         </form>              

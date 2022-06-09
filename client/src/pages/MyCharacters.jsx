@@ -39,7 +39,7 @@ const characters = data?.me.characters || {}
                 <div className="content mb-5">
                     <h2 id="heading-txt">Characters 
                         <span className="ml-6">
-                            <Link to={'/createCharacter'}><button id="login-btn" className="button">New character</button></Link>
+                            <Link to={'/createCharacter'}><button id="new-char-btn" className="button">New character</button></Link>
                         </span>
                     </h2>
                 </div>
