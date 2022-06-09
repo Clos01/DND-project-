@@ -37,7 +37,7 @@ const App = () => {
   <ApolloProvider client={client}>
     <Router>
         <div className="flex-column justify-flex-start min-100-vh">
-          <Navbar />
+          <section className="section"><Navbar /></section>
         <div className="container">
           <Routes>
             <Route
