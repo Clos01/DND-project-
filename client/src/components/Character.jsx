@@ -33,10 +33,10 @@ const character = data.characterByID
                     <div className="columns is-centered mt-5">
                         <div className="column is-4">
                             <div id="char-box" className="box has-text-left">
-                                <div className="Character-data m-4"><span className="has-text-weight-bold">Gender:</span> {character.gender}</div>
-                                <div className="Character-data m-4"><span className="has-text-weight-bold">Race:</span> {character.race}</div>
-                                <div className="Character-data m-4"><span className="has-text-weight-bold">Class:</span> {character.charClass}</div>
-                                <div className="Character-data m-4"><span className="has-text-weight-bold">Background:</span> {character.background}</div>
+                                <div id="stat-txt" className="Character-data m-4"><span className="has-text-weight-bold">Gender:</span> {character.gender}</div>
+                                <div id="stat-txt" className="Character-data m-4"><span className="has-text-weight-bold">Race:</span> {character.race}</div>
+                                <div id="stat-txt" className="Character-data m-4"><span className="has-text-weight-bold">Class:</span> {character.charClass}</div>
+                                <div id="stat-txt" className="Character-data m-4"><span className="has-text-weight-bold">Background:</span> {character.background}</div>
                             </div>
                         </div>
                     </div>
