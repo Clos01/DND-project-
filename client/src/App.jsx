@@ -2,7 +2,7 @@ import React from "react";
 import './App.css'; 
 
 import Login from "./pages/LogIn";
-import CharacterChar from "./pages/CharacterChar";
+import CharacterChar from "./pages/CreateChar";
 import MyCharacters from "./pages/MyCharacters";
 import SignUpPage from "./pages/SignUp";
 
