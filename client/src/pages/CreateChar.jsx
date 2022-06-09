@@ -1,8 +1,8 @@
-import React from "react";
-import Create from "../components/CreateChar"
+// import React from "react";
+// import Create from "../components/CreateChar"
 
-export default function CreateChar() {
-    return {
-        <Create/>
-    }
-} 
+// export default function CreateChar() {
+//     return {
+//         <Create/>
+//     }
+// } 
