@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Create from '../components/Create'
+import SignUp from '../components/SignUp'
 
 
 export default class SignUpPage extends Component {

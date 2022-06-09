@@ -5,7 +5,7 @@ import Intro from "./intro";
 import Login from "./pages/LogIn";
 import CharacterChar from "./pages/CharacterChar";
 import MyCharacters from "./pages/MyCharacters";
-import SignUp from "./pages/SignUp";
+import SignUpPage from "./pages/SignUp";
 
 import Navbar from "./components/Navbar";
 
@@ -57,7 +57,7 @@ const App = () => {
             />
             <Route
               path="/signup"
-              element={<SignUp />}
+              element={<SignUpPage />}
             />
             <Route
               path="/profile/"
