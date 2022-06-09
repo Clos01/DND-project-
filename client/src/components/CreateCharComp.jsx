@@ -89,42 +89,96 @@ export default function CreateCharComp ()  {
       ];
 
     return (
-        <form onSubmit={handleFormSubmit}>
-          <input name='name' placeholder="Name" value={name} onChange={handleNameChange}></input>
+      
+      <section className="section">
+          <div className="content has-text-centered mb-5">
+              <h2 id="heading-txt">Choose Your Character Options</h2>
+          </div>
+          <div className="columns is-centered m-6">
+              <div className="column is-4">
+              
+              <form onSubmit={handleFormSubmit}>
+                <div className="field">
+                <label id="label-txt" className="label">Character Name</label>
+                  <div className="control">
+                      <input className="input is-danger" name='name' placeholder="Character Name" value={name} onChange={handleNameChange}></input>
+                  </div>
+                </div>
 
-          <select value={gender} onChange={handleGenderChange}>
-            {genders.map(gender => (
-              <option key={gender}>
-                {gender}
-              </option>
-            ))}
-          </select>
 
-          <select value={charClass} onChange={handleCharclassChange}>
-            {classes.map(Class => (
-              <option key={Class}>
-                {Class}
-              </option>
-            ))}
-          </select>
+                <div className="field">
+                  <label id="label-txt" className="label">Gender</label>
+                  <div className="control">
+                    <div className="select is-danger">
+                        <select value={gender} onChange={handleGenderChange}>
+                        {genders.map(gender => (
+                          <option key={gender}>
+                            {gender}
+                          </option>
+                        ))}
+                        </select>
+                    </div>
+                   </div>
+                  </div>
 
-          <select value={race} onChange={handleraceChange}>
-            {races.map(race => (
-              <option key={race}>
-                {race}
-              </option>
-            ))}
-          </select>
+                  <div className="field">
+                    <label id="label-txt" className="label">Class</label>
+                      <div className="control">
+                        <div className="select is-danger">
+                            <select value={charClass} onChange={handleCharclassChange}>
+                            {classes.map(Class => (
+                              <option key={Class}>
+                                {Class}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                    </div>
 
-          <select value={background} onChange={handleBackgroundChange}>
-            {backgrounds.map(background => (
-              <option key={background}>
-                {background}
-              </option>
-            ))}
-          </select>
-            <button type="submit">Submit</button>
-        </form>
+
+                    <div className="field">
+                      <label id="label-txt" className="label">Race</label>
+                        <div className="control">
+                          <div className="select is-danger">
+                              <select value={race} onChange={handleraceChange}>
+                              {races.map(race => (
+                                <option key={race}>
+                                  {race}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="field">
+                    <label id="label-txt" className="label">Background</label>
+                      <div className="control">
+                        <div className="select is-danger">
+                          <select value={background} onChange={handleBackgroundChange}>
+                          {backgrounds.map(background => (
+                            <option key={background}>
+                              {background}
+                            </option>
+                          ))}
+                        </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="field">
+                    <div className="control">
+                      <button id="login-btn" type="submit" className="button mt-4">Create character</button>
+                    </div>
+                </div>
+        </form>              
+        </div>
+        </div>
+        </section>
+
+
+
       );
     };
         // <Dropdown

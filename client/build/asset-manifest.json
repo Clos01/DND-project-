@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7a6f0da.css",
+    "main.js": "/static/js/main.1ea85ee6.js",
+    "static/media/disco-dice.png": "/static/media/disco-dice.1a59e43078e7b03a2d66.png",
+    "index.html": "/index.html",
+    "main.e7a6f0da.css.map": "/static/css/main.e7a6f0da.css.map",
+    "main.1ea85ee6.js.map": "/static/js/main.1ea85ee6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7a6f0da.css",
+    "static/js/main.1ea85ee6.js"
+  ]
+}
