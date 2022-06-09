@@ -27,7 +27,7 @@ const characters = data?.me.characters || {}
                 </div>
             </section>
             <section className="section">
-                <div className="columns">
+                <div className="columns is-flex-wrap-wrap">
                     {characters.length > 0 ? (
                         characters.map(character => ( 
                         <div className="column is-3" key={character._id}>
