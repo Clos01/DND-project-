@@ -20,7 +20,7 @@ const Exit = () => {
             backgroundSize: 'cover',
         }}>
             <h1 className='head'>
-           Leaving already?
+        you've been logged out!
           </h1>
           
         </ParallaxLayer>
