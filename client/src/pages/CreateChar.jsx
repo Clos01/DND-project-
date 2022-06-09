@@ -1,8 +1,10 @@
-// import React from "react";
-// import Create from "../components/CreateChar"
+import React from "react";
+import CreateCharComp from "../components/CreateCharComp"
 
-// export default function CreateChar() {
-//     return {
-//         <Create/>
-//     }
-// } 
+export default function CreateChar() {
+    return (
+        <CreateCharComp></CreateCharComp>
+    )
+        
+    
+} 
