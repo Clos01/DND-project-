@@ -31,7 +31,7 @@ export const intro = () => {
                   
                   fontSize:'3rem',
               fontFamily:'MedievalSharp, cursive',
-    }}>Dungeon Disco</h1>
+    }}>Disco at the Dungeon </h1>
   <p>
 beware Danger up ahead
   <span className='span'

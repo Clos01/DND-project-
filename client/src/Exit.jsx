@@ -34,7 +34,7 @@ const Exit = () => {
     <h1> Learning about the game </h1>
     
   
-    <h4> Great you had fun playing the game, Comeback whenever you can. We'll keep in proving the game as much as we can at the bottom of the page you can provide us feedback. Thank you for playing Dungeon Disco </h4>
+    <h4> Thank you for using Disco at the Dungeon </h4>
     
   </ParallaxLayer>
  
@@ -47,8 +47,8 @@ const Exit = () => {
  </ParallaxLayer> 
 
 <ParallaxLayer className='section3'>
-<h1>Going back  again?  </h1>
-<button className='Enter_btn'> Entrance</button>
+<h1> Playing again? </h1>
+<button className='Enter_btn'> Entrance </button>
 </ParallaxLayer> 
 
 <ParallaxLayer className='parallax3'> 
@@ -56,7 +56,9 @@ const Exit = () => {
  </ParallaxLayer> 
 
  <div className='footer'>
- Copyright © 2020 - All rights Reserved Leigh, Carlos, Sam, Eric & Lindsey
+   contact us at:
+   
+ 
     </div>
     
     </div>
