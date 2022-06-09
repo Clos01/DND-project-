@@ -36,7 +36,7 @@ const characters = data?.me.characters || {}
                                 <h3>{character.name}</h3>
                             </div>
                             <figure className="image is-128x128 mb-4">
-                                <img src={disco} alt='discoball'/>
+                            <img src={require(`../images/${character.charClass}.gif`)} alt="" />
                             </figure>
                             <div className="field is-grouped">
                                 <p className="control">
