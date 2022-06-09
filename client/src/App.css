@@ -7,7 +7,7 @@ html, body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    background-color: black; 
+    background-color: rgb(52, 51, 51); 
 }
 
 #nav-title {
@@ -18,7 +18,7 @@ html, body
 
 #nav-sub {
     color: #e7e7db; 
-    font-size: 20px; 
+    font-size: 30px; 
     font-weight: bold;  
 }
 

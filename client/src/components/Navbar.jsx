@@ -24,7 +24,7 @@ const Navbar = () => {
                 <span className="image is-48x48 mr-2">
                     <img src={disco} alt="" />
                 </span>
-               <Link to={'/'} className='has-text-white'>{data.me.username}</Link>
+               <Link to={'/'} className='has-text-warning-light'>{data.me.username}</Link>
             </p>
             ):(<div className='level-item mr-6' ></div>)}
             
@@ -37,12 +37,12 @@ const Navbar = () => {
                 <p className="level-item has-text-centered">
                     <div className="dropdown is-hoverable">
                         <div className="dropdown-trigger">
-                            <button id="acct-btn" className="button is-small" aria-haspopup="true" aria-controls="dropdown-menu4">
+                            <button id="acct-btn" className="button" aria-haspopup="true" aria-controls="dropdown-menu4">
                                 <span>Account Settings</span>
                             </button>
                         </div>
                         <div className="dropdown-menu" id="dropdown-menu4" role="menu">
-                            <div className="dropdown-content">
+                            <div className="dropdown-content has-text-left">
                                 <div className="dropdown-item">
                                     <a href='/' onClick={logout} className="has-text-left">Logout</a>
                                 </div>
