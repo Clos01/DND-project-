@@ -1,12 +1,30 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
+import { useMutation, useQuery } from '@apollo/client';
 import { QUERY_ME} from '../utils/queries';
 import Auth from '../utils/auth';
 import disco from '../images/disco-dice.png'; 
 import { Link } from 'react-router-dom';
+import { DELETE_CHAR } from "../../src/utils/mutations";
 
 const MyCharacters = () => {
 const { loading, data } = useQuery(QUERY_ME);
+const [removeChar] = useMutation(DELETE_CHAR);
+
+const handleRemoveChar = async (characterId) => {
+    const token = Auth.loggedIn() ? Auth.getToken() : null;
+    if (!token) {
+      return false;
+    }
+    try {
+      await removeChar({
+        variables: { characterId },
+      });
+      window.location.href="/profile";
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
 
 if(loading){
     return <div>'Loading...'</div>
@@ -43,7 +61,7 @@ const characters = data?.me.characters || {}
                                     <Link to={`/character/${character._id}`}><button className="button is-primary is-light is-outlined">View</button></Link>
                                 </p>
                                 <p className="control">
-                                    <button className="button is-danger is-light is-outlined">Delete</button>
+                                    <button href="#" onClick={() => handleRemoveChar(character._id)} className="button is-danger is-light is-outlined">Delete</button>
                                 </p>
                             </div>
                         </div>
