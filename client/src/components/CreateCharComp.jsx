@@ -5,8 +5,31 @@ import { QUERY_ME, QUERY_USER_CHAR } from "../utils/queries";
 import { Link } from "react-router-dom";
 
 export default function CreateCharComp ()  {
-  const  [addCharacter, {error}] = useMutation(ADD_CHAR)  
+  // const  [addCharacter, {error}] = useMutation(ADD_CHAR)  
+  const [addCharacter, { error }] = useMutation(ADD_CHAR, {
+    update(cache, { data: { addCharacter } }) {
   
+        // could potentially not exist yet, so wrap in a try/catch
+      try {
+        // update me array's cache
+        const { me } = cache.readQuery({ query: QUERY_ME });
+        cache.writeQuery({
+          query: QUERY_ME,
+          data: { me: { ...me, characters: [...me.characters, addCharacter] } },
+        });
+      } catch (e) {
+        console.warn("First thought insertion by user!")
+      }
+  
+      // update thought array's cache
+      const { characters } = cache.readQuery({ query: QUERY_USER_CHAR });
+      cache.writeQuery({
+        query: QUERY_USER_CHAR,
+        data: { characters: [addCharacter, ...characters] },
+      });
+    }
+  });
+
   const [name, setName ]= useState('');
   const [gender, setGender] = useState('Female');
   const [charClass, setCharclass] = useState('Wizard');
