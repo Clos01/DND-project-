@@ -37,7 +37,7 @@
    <br>
 
   ## Live URL Link
-  (https://dnd-character-creator1.herokuapp.com/)
+  https://dnd-character-creator1.herokuapp.com/
   
   ## Photos
   **_Image of Login_**:
