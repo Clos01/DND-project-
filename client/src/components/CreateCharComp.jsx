@@ -78,7 +78,7 @@ export default function CreateCharComp ()  {
         'Gnome',
         'Halfling',
         'Monk'
-      ]
+      ];
 
       const backgrounds = [
         'Noble',
@@ -86,7 +86,7 @@ export default function CreateCharComp ()  {
         'Criminal',
         'Folk Hero',
         'Hermit'
-      ]
+      ];
 
     return (
         <form onSubmit={handleFormSubmit}>
