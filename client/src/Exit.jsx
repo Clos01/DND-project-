@@ -58,6 +58,7 @@ const Exit = () => {
  <div className='footer'>
  Copyright © 2020 - All rights Reserved Leigh, Carlos, Sam, Eric & Lindsey
     </div>
+    
     </div>
       </Parallax>
 </div>

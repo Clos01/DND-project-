@@ -44,7 +44,7 @@
     
 }
 .parallax1 {
-     background-image: url("./images/sky.gif"); 
+     background-image: url("./images/Skeleton.webp"); 
     background-size: cover;
 
 }
@@ -137,8 +137,15 @@ margin-top: 123rem;
  } 
  .Enter_btn{
 margin-top: 150px;
- }
+padding: 15px 20px;
+border-radius: 15px;
 
+ }
+ .Enter_btn:hover{
+     background-color: #666;
+     color: #e3d9d9;
+     cursor: pointer;
+ }
 @keyframes drop {
     0% {
       opacity: 0;
