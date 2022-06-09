@@ -8,13 +8,12 @@
   * [Link to URL](#live-url-link)
   * [Photos](#photos)
   * [Contributors](#contributors-and-their-github-links)
-  * [Requirements](#requirements)
   * [Questions](#questions)
   * [License](#license)
   
 
   ## Description
-  Love Dungeons and Dragons but hate keeping track of your stats on paper??  Enter "Insert App Name Here".  With "Insert App Name Here" you can create     an account that will allow you to create as many D&D characters as you'd like.  At your profile page you can create a character by entering their name   and stats. From there you will have a digital representation of your D&D character that you can update, delete and eventually share with your campaign   friends.  When you choose your race you are automatically assigned a nifty avatar that matches said race. You will also be assigned an avatar for your   username upon creation.  
+  Love Dungeons and Dragons but hate keeping track of your stats on paper??  Enter "Disco in the Dungeon".  With "Disco in the Dungeon" you can create     an account that will allow you to create as many D&D characters as you'd like.  At your profile page you can create a character by entering their name   and stats. From there you will have a digital representation of your D&D character that you can update, delete and eventually share with your campaign   friends.  When you choose your race you are automatically assigned a nifty avatar that matches said race. You will also be assigned an avatar for your   character upon creation.  
   
   ## User Story
   ``` md
@@ -22,7 +21,7 @@
   Upon entering my information I am  given a random avatar that is generated from my username.  
   When I land on my profile page I can select from 4 character options: Gender, Race, Class 
   and Background. This character will be saved to my profile page and I can create as many characters as I'd like. 
-  My characters will also be assigned an avatar based on it's name.
+  My characters will also be assigned an avatar based on it's class.
   ```
   
   
@@ -57,21 +56,6 @@
   <img src="https://github.com/Clos01/Friendless-in-seattle/blob/main/README-images/Messages.png">
   
   
-  ## Requirements
-
-* Add `.env` file with the following content:
-
-```
-SEQUELIZE_USER=your_mysql_db_user
-SEQUELIZE_PASSWORD=your_mysql_db_password
-SEQUELIZE_HOST=your_mysql_db_host
-AUTH_SECRET=your_auth_secret_key
-ADMIN_USER_PWD=admin_password
-USER_PWD=user_pwd
-FORCE_SYNC=true_or_false
-TU=mysql_user
-TP=mysql_password
-```
   ## Contributors and Their Github Links
   ||
 [Carlos's Github](https://github.com/Clos01) ||
