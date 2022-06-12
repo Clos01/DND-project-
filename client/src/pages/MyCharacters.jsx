@@ -2,7 +2,6 @@ import React from 'react';
 import { useMutation, useQuery } from '@apollo/client';
 import { QUERY_ME} from '../utils/queries';
 import Auth from '../utils/auth';
-import disco from '../images/disco-dice.png'; 
 import { Link } from 'react-router-dom';
 import { DELETE_CHAR } from "../../src/utils/mutations";
 

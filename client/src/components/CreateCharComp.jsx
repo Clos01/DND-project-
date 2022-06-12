@@ -2,10 +2,8 @@ import React, {useState} from "react";
 import { useMutation } from '@apollo/client';
 import { ADD_CHAR } from '../utils/mutations';
 import { QUERY_ME, QUERY_USER_CHAR } from "../utils/queries";
-import { Link } from "react-router-dom";
 
 export default function CreateCharComp ()  {
-  // const  [addCharacter, {error}] = useMutation(ADD_CHAR)  
   const [addCharacter, { error }] = useMutation(ADD_CHAR, {
     update(cache, { data: { addCharacter } }) {
   
@@ -21,7 +19,7 @@ export default function CreateCharComp ()  {
         console.warn("First thought insertion by user!")
       }
   
-      // update thought array's cache
+      // update character array's cache
       const { characters } = cache.readQuery({ query: QUERY_USER_CHAR });
       cache.writeQuery({
         query: QUERY_USER_CHAR,
@@ -63,11 +61,10 @@ export default function CreateCharComp ()  {
 
     const handleFormSubmit = async (event) => {
       event.preventDefault();
-
       try {
         await addCharacter({
           variables: {name, gender, race, charClass, background}
-        });
+        }).then(window.location.href="/")
       } catch (e) {
         console.error(e)
       }
@@ -204,67 +201,3 @@ export default function CreateCharComp ()  {
 
       );
     };
-        // <Dropdown
-        //     label="Choose a Gender"
-        //     options={[
-        //       { label: 'Female', value: 'female' },
-        //       { label: 'Male', value: 'male' },
-        //       { label: 'Non-Binary', value: 'meat' },
-        //     ]}
-        //     value={gender}
-        //     onChange={handleGenderChange}
-        //   />
-    
-        //   <Dropdown
-        //     label="Choose a class"
-        //     options={[
-        //         { label : "Wizard", value: "wizard"},
-        //         { label : "Warlock", value: "warlock"},
-        //         { label : "Barbarian", value: "barbarian"},
-        //         { label : "Sorcerer", value: "scorcerer"},
-        //         { label : "Druid", value: "druid"},
-        //         { label : "Rouge", value: "rouge"},
-        //         { label : "Ranger", value: "ranger"},
-        //         { label : "Monk", value: "monk"},
-        //         { label : "Paladin", value: "paladin"},
-        //         { label : "Cleric", value: "cleric"},
-        //         { label : "Fighter", value: "fighter"},
-        //         { label : "Bard", value: 'bard'},
-        //     ]}
-        //     value={charclass}
-        //     onChange={handleCharclassChange}
-        //   />
-
-        //   <Dropdown
-        //     label="Choose a Race"
-        //     options={[
-        //         { label : "Elf", value: "elf"},
-        //         { label : "Orc", value: 'orc'},
-        //         { label : "Dwarf", value: "dwarf"},
-        //         { label : "Half Elf", value: "half elf"},
-        //         { label : "Human", value: "human"},
-        //         { label : "Gnome", value: "gnome"},
-        //         { label : "Halfling", value: 'halfling'},
-        //         { label : "Monk", value: 'monk'},
-        //     ]}
-        //     value={race}
-        //     onChange={handleraceChange}
-        //   />
-
-        //   <Dropdown
-        //     label="Choose a Background"
-        //     options={[
-        //         { label : "Noble", value: "noble"},
-        //         { label : "charlatan", value: "charlatan"},
-        //         { label : "Criminal", value: "Criminal"},
-        //         { label : "Folk Hero", value: "folk hero"},
-        //         { label : "Hermit", value: "hermit"},
-        //     ]}
-        //     value={background}
-        //     onChange={handleBackgroundChange}
-        //   />
-    
-        //   <p>Gender: {gender}!</p>
-        //   <p>Class: {charlass}!</p>
-        //   <p>Race: {race}!</p>
-        //   <p>background {background}!</p>
