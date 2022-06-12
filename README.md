@@ -13,12 +13,11 @@
   
 
   ## Description
-  Love Dungeons and Dragons but hate keeping track of your stats on paper??  Enter "Disco in the Dungeon".  With "Disco in the Dungeon" you can create     an account that will allow you to create as many D&D characters as you'd like.  At your profile page you can create a character by entering their name   and stats. From there you will have a digital representation of your D&D character that you can update, delete and eventually share with your campaign   friends.  When you choose your race you are automatically assigned a nifty avatar that matches said race. You will also be assigned an avatar for your   character upon creation.  
+  Love Dungeons and Dragons but hate keeping track of your stats on paper??  Enter "Disco in the Dungeon".  With "Disco in the Dungeon" you can create     an account that will allow you to create as many D&D characters as you'd like.  At your profile page you can create a character by entering their name   and stats. From there you will have a digital representation of your D&D character that you can update, delete and eventually share with your campaign   friends.  When you choose your race you are automatically assigned a nifty avatar that matches said class. 
   
   ## User Story
   ``` md
-  If I register and fill out my ‘profile’ I am taken to my profile page that allows me to create a new character.  
-  Upon entering my information I am  given a random avatar that is generated from my username.  
+  If I register and fill out my ‘profile’ I am taken to my profile page that allows me to create a new character.    
   When I land on my profile page I can select from 4 character options: Gender, Race, Class 
   and Background. This character will be saved to my profile page and I can create as many characters as I'd like. 
   My characters will also be assigned an avatar based on it's class.
